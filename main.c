@@ -13,16 +13,9 @@ int main(){
     }
 
     int** matriz = (int**) malloc(linha * sizeof(int));
-    if (matriz == NULL) {
-        return 1;
-    }
 
     for (i = 0; i < linha; i++){
         matriz[i] = (int*) malloc(coluna * sizeof(int));
-        if (matriz == NULL) {
-            return 1;
-
-        }
 
     }
 
@@ -32,17 +25,12 @@ int main(){
         }    
     }
     
-    printf("'");
     for (i = 0; i < linha; i++){ 
         for (j = 0; j < coluna; j++){  
             printf("%d", matriz[i][j]);
 
             if (j < coluna - 1){
                 printf(" ");
-            }
-            
-            if (i == linha - 1 && j == coluna - 1){
-                printf("'");
             }
         
         }
