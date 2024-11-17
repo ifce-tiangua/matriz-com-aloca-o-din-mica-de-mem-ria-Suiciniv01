@@ -32,10 +32,13 @@ int main(){
             if (j < coluna - 1){
                 printf(" ");
             }
+
+            if (j == coluna - 1){
+                printf("\n");
+            }
         
         }
         
-        printf("\n");
     }
 
     for (i = 0; i < linha; i++) {
