@@ -6,16 +6,16 @@ int main(){
 
     scanf("%d %d", &linha, &coluna);
 
-    int** matriz = (int**) malloc(linha * sizeof(int));
-    if (matriz == NULL) {
-        return 1;
+    if (linha == 0 || coluna == 0) {
+        printf("[matriz vazia]\n");
+        return 0;
     }
+
+    int** matriz = (int**) malloc(linha * sizeof(int));
 
     for (i = 0; i < linha; i++){
         matriz[i] = (int*) malloc(coluna * sizeof(int));
-        if (matriz[i] == NULL) {
-            return 1;
-        }
+       
     }
 
     for (i = 0; i < linha; i++){  
