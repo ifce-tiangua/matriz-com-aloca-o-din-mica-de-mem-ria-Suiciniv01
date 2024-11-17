@@ -24,10 +24,21 @@ int main(){
         }    
     }
     
+    printf("'");
     for (i = 0; i < linha; i++){ 
         for (j = 0; j < coluna; j++){  
-            printf("%d ", matriz[i][j]);
+            printf("%d", matriz[i][j]);
+
+            if (j < coluna - 1){
+                printf(" ");
+            }
+            
+            if (i == linha - 1 && j == coluna - 1){
+                printf("'");
+            }
+        
         }
+        
         printf("\n");
     }
 
