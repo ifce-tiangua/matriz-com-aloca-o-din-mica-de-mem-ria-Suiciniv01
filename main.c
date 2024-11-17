@@ -42,10 +42,5 @@ int main(){
         printf("\n");
     }
 
-    for (int i = 0; i < linha; i++) {
-        free(matriz[i]);
-    }
-    free(matriz);
-
     return 0;
 }
