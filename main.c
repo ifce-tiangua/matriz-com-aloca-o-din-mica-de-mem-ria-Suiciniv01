@@ -27,11 +27,7 @@ int main(){
     
     for (i = 0; i < linha; i++){ 
         for (j = 0; j < coluna; j++){  
-            printf("%d", matriz[i][j]);
-
-            if (j < coluna - 1){
-                printf(" ");
-            }
+            printf("%d ", matriz[i][j]);
         
         }
         
