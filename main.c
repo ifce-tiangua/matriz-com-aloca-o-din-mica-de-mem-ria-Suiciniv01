@@ -16,7 +16,6 @@ int main(){
 
     for (i = 0; i < linha; i++){
         matriz[i] = (int*) malloc(coluna * sizeof(int));
-       
     }
 
     for (i = 0; i < linha; i++){  
@@ -43,7 +42,7 @@ int main(){
         printf("\n");
     }
 
-    for (int i = 0; i < linha; i++) {
+    for (i = 0; i < linha; i++) {
         free(matriz[i]);
     }
     free(matriz);
