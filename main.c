@@ -3,6 +3,7 @@
 
 int main(){
 
+    
     int linha, coluna, i, j;
 
     scanf("%d %d", &linha, &coluna);
