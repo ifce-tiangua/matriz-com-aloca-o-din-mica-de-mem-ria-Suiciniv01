@@ -13,20 +13,9 @@ int main(){
     }
 
     int** matriz = (int**) malloc(linha * sizeof(int));
-    if (matriz == NULL) {
-        return 1;
-    }
 
     for (i = 0; i < linha; i++){
         matriz[i] = (int*) malloc(coluna * sizeof(int));
-        if (matriz[i] == NULL){
-
-            for (int j = 0; j < i; j++) {
-                free(matriz[j]);
-            }
-            free(matriz);
-            return 1;
-        }
 
     }
 
@@ -35,6 +24,7 @@ int main(){
             scanf("%d", &matriz[i][j]);
         }    
     }
+    
     
     for (i = 0; i < linha; i++){ 
         for (j = 0; j < coluna; j++){  
